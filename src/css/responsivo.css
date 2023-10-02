@@ -24,6 +24,13 @@
         max-width: 500px;
     }
 
+    .aside {
+        flex-direction: row;
+        align-items: flex-end;
+        width: 100%;
+        padding: 30px;
+    }
+
     .botoes {
         flex-direction: row;
         align-items: flex-end;

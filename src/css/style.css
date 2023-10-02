@@ -1,6 +1,7 @@
 body {
     background-color: #000000;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 main::after {
@@ -33,7 +34,7 @@ main .personagem .imagem {
     position: absolute;
     top: 0;
     left: 120px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +44,7 @@ main .personagem .imagem {
 }
 
 .conteudo .nome-personagem {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 48px;
     font-family: "Secular One";
     font-weight: 400;
@@ -51,7 +52,7 @@ main .personagem .imagem {
 }
 
 .conteudo .descricao {
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: "Rubik";
     line-height: 24px;
 }
@@ -64,23 +65,34 @@ main .personagem .imagem {
     margin-bottom: 35px;
 }
 
-.botoes {
+.aside{
     position: fixed;
     top: 0;
-    right: 0; 
+    right: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    max-height: 100vh;
     width: 180px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.botoes {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .botoes .botao {
     border: none;
-    background: #000000;
+    background: black;
     cursor: pointer;
     border-radius: 50%;
 }
