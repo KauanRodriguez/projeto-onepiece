@@ -77,9 +77,7 @@ main .personagem .imagem {
     align-items: center;
     gap: 10px;
     background-color: rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .botoes {
@@ -87,8 +85,9 @@ main .personagem .imagem {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
 }
+
 
 .botoes .botao {
     border: none;
@@ -96,6 +95,7 @@ main .personagem .imagem {
     cursor: pointer;
     border-radius: 50%;
 }
+
 
 .botoes .botao img {
     border-radius: 50%;
